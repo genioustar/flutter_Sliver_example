@@ -39,6 +39,50 @@ final List<Map<String, dynamic>> _example = [
   {
     'title': 'SliverToBoxAdapter',
     'widget': const SliverToBoxAdapterExample(),
+  },
+  {
+    'title': 'SliverGrid',
+    'widget': const SliverGridExample(),
+  },
+  {
+    'title': 'SliverFixedExtentList',
+    'widget': const SliverFixedExtentListExample(),
+  },
+  {
+    'title': 'SliverGrid.count',
+    'widget': const SliverGridCountExample(),
+  },
+  {
+    'title': 'SliverGrid.extent',
+    'widget': const SliverGridExtentExample(),
+  },
+  {
+    'title': 'SliverAnimatedList',
+    'widget': const SliverAnimatedListExample(),
+  },
+  {
+    'title': 'SliverFillRemaining',
+    'widget': const SliverFillRemainingExample(),
+  },
+  {
+    'title': 'SliverFillViewport',
+    'widget': const SliverFillViewportExample(),
+  },
+  {
+    'title': 'Sliver Overlap',
+    'widget': const SliverOverlapExample(),
+  },
+  {
+    'title': 'Sliver Grid Mix',
+    'widget': const SliverGridMixExample(),
+  },
+  {
+    'title': 'SliverAppBarWithTabs',
+    'widget': const SliverAppBarWithTabsExample(),
+  },
+  {
+    'title': 'RefreshSliverListExample',
+    'widget': const RefreshSliverListExample(),
   }
 ];
 
@@ -48,9 +92,12 @@ class SliverExampleNavigatorList extends StatelessWidget {
   @override
   Widget build(BuildContext context) => Scaffold(
         appBar: AppBar(
-          title: const Text(
-            'sliver examples',
-            style: TextStyle(color: Colors.white),
+          title: const PreferredSize(
+            preferredSize: Size.fromHeight(50),
+            child: Text(
+              'sliver examples',
+              style: TextStyle(color: Colors.white),
+            ),
           ),
           backgroundColor: Colors.deepPurple,
         ),
